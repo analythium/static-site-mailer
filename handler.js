@@ -4,7 +4,7 @@ const AWS = require('aws-sdk');
 const SES = new AWS.SES();
 
 function validOrigin(testOrigin) {
-  const VALID_ORIGINS = ['http://localhost:3000', 'https://www.jennypreswick.com', 'https://www.brianholt.ca'];
+  const VALID_ORIGINS = ['http://localhost:3000', 'https://www.analythium.io'];
   return VALID_ORIGINS.filter(origin => origin === testOrigin)[0] || VALID_ORIGINS[0];
 }
 
